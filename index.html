@@ -81,11 +81,20 @@
                     </div>
                 </div>
                 <!-- commands  -->
-                <div class="col-auto d-flex gap-2">
+                <div class="col-auto d-flex align-items-center gap-lg-3" role="button">
                     <i class="d-none d-lg-block fa-solid fa-list-ul"></i>
                     <i class="d-none d-lg-block fas fas fa-circle-question"></i>
                     <i class="d-none d-lg-block fas fa-ellipsis-vertical"></i>
-                    <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                    <div class="dropdown">
+                        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

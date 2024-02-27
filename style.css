@@ -49,6 +49,14 @@ header {
     background-color: transparent;
 }
 
+.ms-search-bar:focus-visible {
+    outline: none
+}
+
+header .dropdown .btn {
+    border: none;
+}
+
 /* #endregion HEADER */
 /* #region MAIN */
 .ms-page-wrapper {
