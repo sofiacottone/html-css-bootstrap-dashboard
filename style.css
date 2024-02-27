@@ -7,6 +7,7 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: var(--ms-main-bg);
 }
 
 .ms-bg-dark-blue {
@@ -22,10 +23,30 @@ body {
     background-color: var(--ms-main-bg);
 }
 
+.ms-bg-white {
+    background-color: #fff;
+}
+
+.ms-logo-container {
+    width: 50px;
+}
+
 /* #endregion GENERAL */
 /* #region HEADER */
 header {
     height: 4.375rem;
+}
+
+.ms-search {
+    background-color: #e5e5e5;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.ms-search-bar {
+    width: 100%;
+    border: none;
+    background-color: transparent;
 }
 
 /* #endregion HEADER */
