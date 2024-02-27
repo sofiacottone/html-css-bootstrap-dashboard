@@ -5,4 +5,64 @@
     --ms-main-bg: #f8f9fa;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.ms-bg-dark-blue {
+    background-color: var(--ms-dark-blue);
+}
+
+.ms-bg-blue {
+    background-color: var(--ms-blue);
+    color: #fff;
+}
+
+.ms-bg-main {
+    background-color: var(--ms-main-bg);
+}
+
 /* #endregion GENERAL */
+/* #region HEADER */
+header {
+    height: 4.375rem;
+}
+
+/* #endregion HEADER */
+/* #region MAIN */
+.ms-page-wrapper {
+    height: calc(100vh - 4.375rem);
+    display: flex;
+}
+
+.ms-sidebar {
+    background-image: url(img/sidebar-bg.png);
+    background-color: var(--ms-dark-blue);
+    height: 100%;
+    width: 4.375rem;
+    flex-shrink: 0;
+    color: #fff;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* #endregion MAIN */
+/* #region RESPONSIVE */
+/*----- breakpoints --------------
+Extra small	None	<576px
+Small	    sm	    ≥576px
+Medium	    md	    ≥768px | Tablet
+Large	    lg	    ≥992px | Desktop
+Extra large	xl	    ≥1200px
+Extra extra large	xxl	≥1400px 
+----------------------------------*/
+
+/* Large | Desktop */
+@media screen and (min-width: 992px) {
+    .ms-sidebar {
+        width: 9.375rem;
+    }
+}
+
+/* #endregion RESPONSIVE */
