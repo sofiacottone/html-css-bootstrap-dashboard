@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <header class="d-flex align-items-center">
+    <header class="sticky-top d-flex align-items-center">
         <div class="container-fluid">
             <div class="row align-items-center ms-bg-white py-2">
                 <!-- logo  -->
@@ -135,20 +135,165 @@
             </div>
         </div>
         <!-- main  -->
-        <main class="ms-bg-main">
+        <main class="ms-bg-main w-100">
             <!-- header main  -->
             <section class="container-fluid ms-bg-blue">
-                <div class="row flex-column flex-md-row">
-                    <div class="col order-md-3">
-                        nuovo
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur omnis eaque optio odio
-                            enim quibusdam sapiente quas, amet quia quis non veniam alias nihil nam aperiam voluptatibus
-                            expedita dolorem eos?
-                        </p>
+                <div class="row flex-column flex-md-row py-3 px-2 gap-3 gap-md-0">
+                    <!-- new student  -->
+                    <div class="col-12 col-md-3 order-md-3">
+                        <span class="fs-6 fw-light pe-2">Nuovo Studente</span>
+                        <button type="button" class="ms-add-btn" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form class="row g-3">
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputName" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" id="inputName">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputSurname" class="form-label">Cognome</label>
+                                        <input type="text" class="form-control" id="inputSurname">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="text" class="form-control" aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputEmail4" class="form-label">Indirizzo Email</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                            <input type="text" class="form-control" aria-label="Username"
+                                                aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">Stato</label>
+                                        <select id="inputState" class="form-select" name="european countries">
+                                            <option selected>Scegli...</option>
+                                            <option value="albania">Albania</option>
+                                            <option value="andorra">Andorra</option>
+                                            <option value="austria">Austria</option>
+                                            <option value="belarus">Bielorussia</option>
+                                            <option value="belgium">Belgio</option>
+                                            <option value="bosnia_and_herzegovina">Bosnia ed Erzegovina</option>
+                                            <option value="bulgaria">Bulgaria</option>
+                                            <option value="croatia">Croazia</option>
+                                            <option value="cyprus">Cipro</option>
+                                            <option value="czech_republic">Repubblica Ceca</option>
+                                            <option value="denmark">Danimarca</option>
+                                            <option value="estonia">Estonia</option>
+                                            <option value="finland">Finlandia</option>
+                                            <option value="france">Francia</option>
+                                            <option value="germany">Germania</option>
+                                            <option value="greece">Grecia</option>
+                                            <option value="hungary">Ungheria</option>
+                                            <option value="iceland">Islanda</option>
+                                            <option value="ireland">Irlanda</option>
+                                            <option value="italy">Italia</option>
+                                            <option value="latvia">Lettonia</option>
+                                            <option value="liechtenstein">Liechtenstein</option>
+                                            <option value="lithuania">Lituania</option>
+                                            <option value="luxembourg">Lussemburgo</option>
+                                            <option value="malta">Malta</option>
+                                            <option value="moldova">Moldavia</option>
+                                            <option value="monaco">Monaco</option>
+                                            <option value="montenegro">Montenegro</option>
+                                            <option value="netherlands">Paesi Bassi</option>
+                                            <option value="north_macedonia">Macedonia del Nord</option>
+                                            <option value="norway">Norvegia</option>
+                                            <option value="poland">Polonia</option>
+                                            <option value="portugal">Portogallo</option>
+                                            <option value="romania">Romania</option>
+                                            <option value="russia">Russia</option>
+                                            <option value="san_marino">San Marino</option>
+                                            <option value="serbia">Serbia</option>
+                                            <option value="slovakia">Slovacchia</option>
+                                            <option value="slovenia">Slovenia</option>
+                                            <option value="spain">Spagna</option>
+                                            <option value="sweden">Svezia</option>
+                                            <option value="switzerland">Svizzera</option>
+                                            <option value="turkey">Turchia</option>
+                                            <option value="ukraine">Ucraina</option>
+                                            <option value="united_kingdom">Regno Unito</option>
+                                            <option value="vatican_city">Città del Vaticano</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="inputZip" class="form-label">CAP</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                                            <label class="form-check-label" for="gridCheck">
+                                                Seleziona per proseguire
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="reset" class="btn text-bg-warning">Svuota</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col order-md-1">boolean</div>
-                    <div class="col order-md-2">studenti</div>
+                    <!-- h2 + badges  -->
+                    <div class="col-12 col-md-6 order-md-1">
+                        <div class="d-flex align-items-center gap-2">
+                            <h2 class="mb-0">Boolean</h2>
+                            <span class="badge rounded-pill ms-primary-badge">Piano blaze</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                            <span class="badge rounded-pill ms-primary-badge">3 app</span>
+                            <span class="fs-4">&#187;</span>
+                            <span class="badge rounded-pill ms-primary-badge d-lg-none">+</span>
+                            <span class="badge rounded-pill ms-primary-badge d-none d-lg-inline-block">Boolean mobile
+                                app</span>
+                            <span class="badge rounded-pill ms-primary-badge d-none d-lg-inline-block">Boolean web
+                                app</span>
+                            <span class="badge rounded-pill ms-primary-badge d-none d-lg-inline-block">Boolean blog
+                                app</span>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-3 order-md-2">
+                        <div>Studenti online negli ultimi 30 minuti</div>
+                        <div class="fs-3">125</div>
+                    </div>
                 </div>
             </section>
             <!-- main section  -->

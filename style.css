@@ -67,6 +67,7 @@ header .dropdown .btn {
 .ms-page-wrapper {
     height: calc(100vh - 4.375rem);
     display: flex;
+    overflow: hidden;
 }
 
 .ms-sidebar {
@@ -79,6 +80,25 @@ header .dropdown .btn {
     padding: 2.25rem 1.25rem;
     display: flex;
     flex-direction: column;
+}
+
+.ms-primary-badge {
+    background-color: #165bba;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+.ms-add-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+}
+
+#offcanvasRight {
+    width: 100%;
+    transition: width 0.25s ease;
 }
 
 /* #endregion MAIN */
@@ -100,6 +120,10 @@ Extra extra large	xxl	≥1400px
 
     .ms-sidebar a span:first-of-type {
         width: 25%;
+    }
+
+    #offcanvasRight {
+        width: 50%;
     }
 }
 
