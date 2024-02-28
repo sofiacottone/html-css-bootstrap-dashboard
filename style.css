@@ -15,6 +15,12 @@ a {
     text-decoration: none;
 }
 
+.ms-active-link {
+    color: #0D6EFD;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
 .ms-bg-dark-blue {
     background-color: var(--ms-dark-blue);
 }
