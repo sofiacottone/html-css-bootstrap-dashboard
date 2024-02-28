@@ -117,6 +117,11 @@ main {
     overflow: hidden;
 }
 
+.ms-form-check {
+    padding-left: 36px;
+    padding-block: 6px;
+}
+
 /* #endregion MAIN */
 /* #region RESPONSIVE */
 /*----- breakpoints --------------
