@@ -117,6 +117,10 @@ main {
     transition: width 0.25s ease;
 }
 
+.ms-table table tbody tr>td {
+    vertical-align: middle;
+}
+
 .ms-table-logo-xs {
     width: 1.875rem;
     border-radius: 50%;
@@ -128,7 +132,105 @@ main {
     padding-block: 6px;
 }
 
+/* tooltip */
+.ms-tooltip {
+    position: relative;
+    /* display: inline-block; */
+}
+
+.ms-tooltiptext {
+    visibility: hidden;
+    background-color: #00000090;
+    color: #fff;
+    text-align: center;
+    font-size: .875rem;
+    border-radius: .375rem;
+    padding: .3125rem;
+    position: absolute;
+    top: -0.1875rem;
+    left: 2.25rem;
+    z-index: 1;
+}
+
+.ms-tooltip .ms-tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -0.3125rem;
+    border-width: .3125rem;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+}
+
+.ms-tooltip:hover .ms-tooltiptext {
+    visibility: visible;
+}
+
+/* /tooltip  */
 /* #endregion MAIN */
+/* #region :hover */
+.ms-sidebar a:hover {
+    background-color: #bfbfbf40;
+    border-radius: 4px;
+}
+
+/* bell  */
+.bell:hover {
+    animation: bellshake .5s;
+    transform-origin: top right;
+}
+
+@keyframes bellshake {
+    0% {
+        transform: rotate(0);
+    }
+
+    15% {
+        transform: rotate(6deg);
+    }
+
+    30% {
+        transform: rotate(-6deg);
+    }
+
+    45% {
+        transform: rotate(4deg);
+    }
+
+    60% {
+        transform: rotate(-4deg);
+    }
+
+    75% {
+        transform: rotate(2deg);
+    }
+
+    85% {
+        transform: rotate(-2deg);
+    }
+
+    92% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* /bell  */
+.ms-add-btn:hover {
+    background-color: #165bba;
+    transform: scale(1.1);
+}
+
+.ms-action-btn:hover {
+    background-color: #6c757d30;
+    transform: scale(1.1);
+}
+
+/* #endregion :hover */
 /* #region RESPONSIVE */
 /*----- breakpoints --------------
 Extra small	None	<576px
@@ -151,6 +253,11 @@ Extra extra large	xxl	≥1400px
 
     #offcanvasRight {
         width: 50%;
+    }
+
+    .ms-tooltip:hover .ms-tooltiptext,
+    .ms-tooltiptext {
+        visibility: hidden;
     }
 }
 
